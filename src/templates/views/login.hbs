@@ -1,0 +1,21 @@
+{{>header}}
+{{>logregstyle}}
+<body>
+    <div style="position: relative;">
+        <form action="/login/process" method="GET">
+            <fieldset>
+                <legend>{{title}}</legend>
+                <div id="container">
+                    <div>
+                        <label for="user">User:</label><br> 
+                        <input id="user" type="text" placeholder="user" name="user"><br>
+                        <label for="pwd">Password:</label><br>
+                        <input id="pwd" type="password" placeholder="password" name="pwd"><br>
+                        <input type="submit" value="login" style="margin-top: 10px; padding: 0px">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <a id="btn-nav" href="/register">register</a>
+    </div>
+</body>

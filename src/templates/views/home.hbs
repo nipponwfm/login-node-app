@@ -1,0 +1,22 @@
+{{>header}}
+<body>
+    <div id="auth-field">
+        <a href="/login">login</a>
+        <a href="/register">register</a>
+    </div>
+    <form action="/task/add" method="GET" >
+        <input type="text" name="description" disabled>
+        <input type="submit" value="oke" disabled>
+    </form>
+    <a href="/task/get">SEE SUBMIT</a>
+</body>
+<script>
+    const authField = document.querySelector("#auth-field")
+    const input = document.querySelectorAll("input")
+    if ({{login}}==true) {
+        authField.innerHTML = "<a href='/logout'>logout</a>"
+        input.forEach( (value) => {
+            value.disabled = false
+        })
+    }
+</script>

@@ -1,0 +1,55 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+fieldset, input, #btn-nav {
+    border-radius: 5%;
+}
+input::placeholder {
+    opacity: 0.2;
+}
+label {
+    font-size: 20px;
+}
+legend {
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+}
+#container div {
+    width: 300px;
+}
+#container input, #btn-nav {
+    width: 300px;
+    height: 30px;
+    margin: 5px;
+    padding-left: 10px;
+    font-size: 18px;
+    border: gray 1px solid;
+}
+input[type="submit"]:hover, #btn-nav:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+#btn-nav {
+    position: absolute;
+    bottom: 25px;
+    left: 53px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
